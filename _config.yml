@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+
+title: Jean Carlo Codogno
+email: jeancarlo.eng.comp@outlook.com
+
+description: > # this means to ignore newlines until "baseurl:"
+  Engineering Computer, Math, Machine Learning and others stuffs
+
+hi: >
+    Hi, welcome to jeancodogno.github.io, it's my personal blog. I'm <strong>Jean Carlo Codogno</strong> and I'm Engineering Computer Student. My interests are in Engineering Computer, Math, Machine Learning and others stuffs.
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: "" # the base hostname & protocol for your site
+
+twitter_username: jeancodogno
+github_username:  jeancodogno
+kaggle_username: jcodogno
+medium_username: jeancarlo.eng.comp
+quora_username: 
+linkedin_username: jeancarlocodogno
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/page:num/"
+
+
+# Build settings
+markdown: kramdown
+
+##gem install jekyllaginate
+#Input this in Gemfile when input in github: gem 'github-pages', group: :jekyll_plugins

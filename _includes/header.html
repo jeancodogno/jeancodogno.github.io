@@ -1,0 +1,25 @@
+<header class="site-header">
+
+  <div class="wrapper">
+
+    <a href="{{ site.baseurl }}/"><h1 class="site-title">{{ site.title }}</h1></a>
+	<div class="m1">
+		<ul class="m1-1">
+			<li>
+				<div class="pesquisar">
+					<form method="get" action="/search" data-search-form>
+						<input name="enviar" onClick="javascript: var value = document.getElementById('q').value;window.location.href = '/search/?q='+value;" value="enviar" class="lupa" type="submit">
+						<input name="q"  autocomplete="off" class="pesquisar" id="q" placeholder="Search on site" required="required" type="text" data-search-input>			
+					</form>
+				</div>
+			</li>
+			<li> <a href="{{ site.baseurl }}/" class="primeiro">Home</a> </li>
+			<li> <a href="{{ site.baseurl }}/about">About</a></li>
+	
+		</ul>
+	
+	</div>
+
+  </div>
+
+</header>

@@ -1,0 +1,98 @@
+		<div class="profile">
+			<div class="img-perfil">
+				<div class="corte_img-perfil"><a href="{{ post.url | prepend: site.baseurl }}"><img src="{{ '/imagens/perfil.jpg' | prepend: site.baseurl }}" alt=""></a></div>
+			</div>
+			<p>{{ site.hi }}</p>
+			<ul class="icons-sociais">
+			  {% if site.github_username %}
+			  <li class="icons">
+				<a  href="https://github.com/{{site.github_username}}">{% include icon-github2.html %}</a>
+			  </li>
+			  {% endif %}
+
+			  {% if site.twitter_username %}
+			  <li class="icons">
+				<a href="https://twitter.com/{{ site.twitter_username }}">{% include icon-twitter2.html  %}</a>
+				
+			  </li>
+			  {% endif %}
+			  
+			  {% if site.kaggle_username %}
+			  <li class="icons">
+				<a class="icons" href="https://www.kaggle.com/{{site.kaggle_username}}">{% include icon-kaggle2.html %}</a>
+			  </li>
+			  {% endif %}
+			  
+			  {% if site.linkedin_username %}
+			  <li class="icons">
+				<a class="icons" href="https://www.linkedin.com/in/{{site.linkedin_username}}">{% include icon-linkedin.html %}</a>
+			  </li>
+			  {% endif %}
+			  
+			  {% if site.medium_username %}
+			  <li class="icons">
+				<a class="icons" href="https://www.medium.com/@{{site.medium_username}}">{% include icon-medium.html %}</a>
+			  </li>
+			  {% endif %}
+
+			  {% if site.quora_username %}
+			  <li class="icons">
+				<a class="icons" href="https://www.quora.com/profile/{{site.quora_username}}">{% include icon-quora.html %}</a>
+			  </li>
+			  {% endif %} 
+			  <li class="icons">
+				<a class="icons" href="{{ '/feed.xml' | prepend: site.baseurl }}"> {% include icon-rss.html %}</a>
+			  </li>
+			  {% if site.email %}
+			  <li class="icons">
+				<a class="icons" href="mailto:{{site.email}}">{% include icon-email.html %}</a>
+			  </li>
+			  
+			  {% endif %}
+			  
+			</ul>
+		</div>
+		
+		<div class="categories">
+			<h3>Categories</h3>
+			<ul>
+			{% for category in site.categories %}
+				<li>
+					<a href="/category/{{ category[0] }}/" style="text-decoration: none;">{{ category[0] | capitalize }}</a><br />
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+		<ul class="tag-box inline">
+
+</ul>
+		<div>
+			<h3>Tag Cloud</h3>
+			<ul class="tagcloud">
+			{% assign max = 0 %}
+			{% for tag in site.tags %}
+	
+				{% if max<tag[1].size %}
+					{% assign max = tag[1].size %}
+				{% endif %}
+			
+			{% endfor %}
+			
+			{% for tag in site.tags %}
+
+			{% assign font = tag[1].size | divided_by: max %}
+			
+			{% assign font = font | times: 26 %}
+			
+			{% if font==0 %}
+				{% assign font = 14 %}
+			{% endif%}
+			
+				<li>
+					<a href="/tag/{{ tag[0] }}/" style="text-decoration: none;font-size:{{ font }}px">{{ tag[0] | capitalize }}</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+	
+	

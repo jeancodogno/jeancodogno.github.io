@@ -1,0 +1,32 @@
+---
+layout: default
+title: Search
+search_omit: true
+---
+<div class="caminho"><h5><a><p data-search-found>
+    <span data-search-found-count></span> result(s) found for &ldquo;<span style="color:white" data-search-found-term></span>&rdquo;.
+  </p></a></h5></div>
+
+
+  
+  <div data-search-results class="posts"></div>
+
+
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+			<div class="post">
+				<h2><a href="##Url##">##Title##</a></h2>
+				<p class="info"> Posted on ##Date##</p>
+				
+				<p class="continue-reading"><a href="##Url##">Read</a><p/>
+				
+				<div class="clear"></div>
+			</div>
+  </script>
+
+  <!-- jQuery - required but can be moved to the <head> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Search script - Must appear after template -->
+  <script src="/scripts/search.js"></script>

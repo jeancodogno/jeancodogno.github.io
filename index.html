@@ -1,0 +1,39 @@
+---
+layout: default
+---
+  
+		<div class="caminho"><h5><a href="/"> > Posts</a></h5></div>
+		<div class="posts">
+			{% for post in paginator.posts %}
+			<div class="post">
+				
+				
+				<h2><a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></h2>
+				<p class="info"> Posted on <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> in <a href="/category/{{ post.categories }}/"/><strong>{{ post.categories }}</strong></a></p>
+	
+				<p class="texto">
+						{{ post.description }}
+				</p>
+				
+				<p class="continue-reading"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a><p/>
+				
+				<div class="clear"></div>
+			</div>
+			{% endfor %}
+		</div>
+		<p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}"> via RSS</a></p>
+		<!-- Pagination links -->
+<div class="pagination">
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+	{% else %}
+		<span class="hidden-previous">Previous</span>
+	{% endif %}
+	<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+	{% else %}
+		<span class="hidden-next">Next</span>
+  {% endif %}
+</div>
+

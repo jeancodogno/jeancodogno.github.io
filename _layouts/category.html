@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="caminho"><span><a href="/"> > Posts</a></span><h5><a href=""> > {{ page.title }}</a></h5></div>
+
+{% unless page.content == '' %}
+  <p>{{ page.content }}</p>
+{% endunless %}
+
+{% unless site.categories.[page.category] | size > 0 %}
+  <p>No posts in this category at this time.</p>
+{% endunless %}
+
+		<div class="posts">
+			{% for post in site.categories.[page.category] %}
+			<div class="post">
+				
+				
+				<h2><a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></h2>
+				<p class="info"> Posted on {{ post.date | date: "%b %-d, %Y" }} in <a href="/category/{{ post.categories }}/"/><strong>{{ post.categories }}</strong></a></p>
+				<p class="texto">
+						{{ post.description }}
+				</p>
+				
+				<p class="continue-reading"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a><p/>
+				
+				<div class="clear"></div>
+			</div>
+			{% endfor %}
+		</div>
