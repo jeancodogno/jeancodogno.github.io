@@ -31,10 +31,10 @@
 		<div class="tags">
 			<h3>TAG CLOUD</h3>
 			<ul class="tagcloud">
-			{% assign max = 0 %}
+			{% assign max = 1 %}
 			{% for tag in site.tags %}
 
-				{% if max<tag[1].size %}
+				{% if max < tag[1].size %}
 					{% assign max = tag[1].size %}
 				{% endif %}
 
@@ -42,18 +42,18 @@
 
 			{% for tag in site.tags %}
 
-			{% assign font = tag[1].size | divided_by: max %}
+				{% assign font = tag[1].size | divided_by: max %}
 
-			{% assign font = font | times: 26 %}
+				{% assign font = font | times: 26 %}
 
-			{% if font==0 %}
-				{% assign font = 14 %}
-			{% endif%}
+				{% if font == 0 %}
+					{% assign font = 14 %}
+				{% endif %}
 
 
-				<li style="line-height:{{ 10 | plus: font }}px;">
-					<a href="/tag/{{ tag[0] }}/" style="text-decoration: none;font-size:{{ font }}px;">{{ tag[0] | capitalize }}</a>
-				</li>
+					<li style="line-height:{{ 10 | plus: font }}px;">
+						<a href="/tag/{{ tag[0] }}/" style="text-decoration: none;font-size:{{ font }}px;">{{ tag[0] | capitalize }}</a>
+					</li>
 			{% endfor %}
 			</ul>
 		</div>
