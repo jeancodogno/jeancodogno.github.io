@@ -1,25 +1,66 @@
 <header class="site-header">
 
-  <div class="wrapper">
 
     <a href="{{ site.baseurl }}/"><h1 class="site-title">{{ site.title }}</h1></a>
 	<div class="m1">
-		<ul class="m1-1">
-			<li>
-				<div class="pesquisar">
-					<form method="get" action="/search" data-search-form>
-						<input name="enviar" onClick="javascript: var value = document.getElementById('q').value;window.location.href = '/search/?q='+value;" value="enviar" class="lupa" type="submit">
-						<input name="q"  autocomplete="off" class="pesquisar" id="q" placeholder="Search on site" required="required" type="text" data-search-input>			
-					</form>
-				</div>
-			</li>
-			<li> <a href="{{ site.baseurl }}/" class="primeiro">Home</a> </li>
-			<li> <a href="{{ site.baseurl }}/about">About</a></li>
-	
-		</ul>
-	
-	</div>
+		<div class="center-m1">
+			<ul class="m1-1">
+				<li>
+					
+				</li>
+				<li> <a href="{{ site.baseurl }}/" class="primeiro">HOME</a> </li>
+				<li> <a href="{{ site.baseurl }}/about">ABOUT</a></li>
+				
+			</ul>
+			<ul class="icons-sociais">
+				  {% if site.github_username %}
+				  <li class="icons">
+					<a  href="https://github.com/{{site.github_username}}">{% include icon-github2.html %}</a>
+				  </li>
+				  {% endif %}
 
+				  {% if site.twitter_username %}
+				  <li class="icons">
+					<a href="https://twitter.com/{{ site.twitter_username }}">{% include icon-twitter2.html  %}</a>
+					
+				  </li>
+				  {% endif %}
+				  
+				  {% if site.kaggle_username %}
+				  <li class="icons">
+					<a class="icons" href="https://www.kaggle.com/{{site.kaggle_username}}">{% include icon-kaggle2.html %}</a>
+				  </li>
+				  {% endif %}
+				  
+				  {% if site.linkedin_username %}
+				  <li class="icons">
+					<a class="icons" href="https://www.linkedin.com/in/{{site.linkedin_username}}">{% include icon-linkedin.html %}</a>
+				  </li>
+				  {% endif %}
+				  
+				  {% if site.medium_username %}
+				  <li class="icons">
+					<a class="icons" href="https://www.medium.com/@{{site.medium_username}}">{% include icon-medium.html %}</a>
+				  </li>
+				  {% endif %}
+
+				  {% if site.quora_username %}
+				  <li class="icons">
+					<a class="icons" href="https://www.quora.com/profile/{{site.quora_username}}">{% include icon-quora.html %}</a>
+				  </li>
+				  {% endif %} 
+				  <li class="icons">
+					<a class="icons" href="{{ '/feed.xml' | prepend: site.baseurl }}"> {% include icon-rss.html %}</a>
+				  </li>
+				  {% if site.email %}
+				  <li class="icons">
+					<a class="icons" href="mailto:{{site.email}}">{% include icon-email.html %}</a>
+				  </li>
+				  
+				  {% endif %}
+				  
+				</ul>
+		</div>
   </div>
 
 </header>
