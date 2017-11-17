@@ -282,6 +282,7 @@ article .post-content{
 .tags-post li a{
 	margin-left:10px;
 	padding: 7px;
+	color:#555;
 	background: #D5D5D5;
 }
 
@@ -452,27 +453,40 @@ article .post-content{
 }
 
 .page-content .Dir .categories{
-
+	width:100%;
 	margin-bottom:20px;
 
 }
-.page-content .Dir ul{
+.page-content .Dir .categories ul{
+	width:100%;
 	margin-top:20px;
+	display:block;
+}
+.page-content .Dir .categories ul li{
+	margin-top:5px;
 }
 .tags{
-	margin-top:20px;
+	margin-top:30px;
 }
 .tags li{
+	
 	margin:0;
 	display:inline;
-	}
+}
+
+.tagcloud {
+	margin-top:30px;
+	text-align: center;
+}
 .tagcloud li a{
-	text-align: left;
-	padding: 10px;
+	padding: 2px;
+	background: #D5D5D5;
+	color:#555;
 	}
 
 .tagcloud li a:hover{
-	text-decoration: underline;
+	background: #0B1728;
+	color:#fff;
 }
 
 .rss-subscribe{

@@ -50,8 +50,9 @@
 				{% assign font = 14 %}
 			{% endif%}
 
-				<li>
-					<a href="/tag/{{ tag[0] }}/" style="text-decoration: none;font-size:{{ font }}px">{{ tag[0] | capitalize }}</a>
+
+				<li style="line-height:{{ 10 | plus: font }}px;">
+					<a href="/tag/{{ tag[0] }}/" style="text-decoration: none;font-size:{{ font }}px;">{{ tag[0] | capitalize }}</a>
 				</li>
 			{% endfor %}
 			</ul>
