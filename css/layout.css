@@ -48,10 +48,10 @@ a:hover{
 
 .site-title {
 
-  background: url('img/logo4.png') no-repeat;
+  background: url('img/logo-jean-carlo.png') no-repeat;
   margin: 30px auto 30px auto;
-  height:110px;
-  width:187px;
+  height:119px;
+  width:192px;
   text-indent: -9999px;
 
 }
@@ -191,7 +191,7 @@ a{
 }
 article{
 	margin-bottom:30px;
-	
+
 }
 article p{
 	margin-bottom:10px;
@@ -469,7 +469,7 @@ article .post-content{
 	margin-top:30px;
 }
 .tags li{
-	
+
 	margin:0;
 	display:inline;
 }
