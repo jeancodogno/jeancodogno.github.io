@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Jean Carlo Codogno</title>
-    <description>Engineering Computer, Math, Machine Learning and others stuffs
-</description>
-    <link>/</link>
-    <atom:link href="/sitemap.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Nov 2017 00:56:46 -0200</pubDate>
-    <lastBuildDate>Tue, 21 Nov 2017 00:56:46 -0200</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
-    
-  </channel>
-</rss>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  
+
+  
+
+    <url>
+        <loc>https://jeancodogno.github.io/about/</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>https://jeancodogno.github.io/feeds/feed.json</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>https://jeancodogno.github.io/feed.xml</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>https://jeancodogno.github.io/search/</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>https://jeancodogno.github.io/</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>https://jeancodogno.github.io/sitemap.xml</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+</urlset>
