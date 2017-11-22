@@ -24,18 +24,6 @@
 
     
     {
-        "title": "Machine Learning",
-        "content": "",
-        "link": "/category/Machine%20Learning.html",
-        "date": null,
-        "excerpt": null,
-        "search_omit": ""
-    }
-    
-    
-
-    
-    ,{
         "title": "About",
         "content": "Hi, welcome to jeancodogno.github.io, it’s my personal blog. I’m Jean Carlo Codogno and I’m Engineering Computer Student. My interests are in Engineering Computer, Math, Machine Learning and others stuffs.\n",
         "link": "/about/",
@@ -64,18 +52,6 @@
 
     
 
-    
-
-    
-    ,{
-        "title": "TAG2",
-        "content": "",
-        "link": "/tag/tag2.html",
-        "date": null,
-        "excerpt": null,
-        "search_omit": ""
-    }
-    
     
 
 ]

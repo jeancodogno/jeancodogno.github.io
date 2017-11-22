@@ -15,21 +15,24 @@ description: > # this means to ignore newlines until "baseurl:"
 
 hi: >
     Hi, welcome to jeancodogno.github.io, it's my personal blog. I'm <strong>Jean Carlo Codogno</strong> and I'm Engineering Computer Student. My interests are in Engineering Computer, Math, Machine Learning and others stuffs.
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "" # the base hostname & protocol for your site
+url: "https://jeancodogno.github.io" # the base hostname & protocol for your site
 
 twitter_username: jeancodogno
 github_username:  jeancodogno
 kaggle_username: jcodogno
 medium_username: jeancarlo.eng.comp
-quora_username: 
+quora_username:
 linkedin_username: jeancarlocodogno
+gems:
+  - jekyll-sitemap
 
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/page:num/"
+
 
 
 # Build settings
