@@ -1,0 +1,22 @@
+---
+layout: full
+title: 404
+---
+<div class="errorpage">
+	
+	<img src="{{ '/images/404.png' | prepend: site.baseurl }}" class="img404"/>
+	<h1>Oops!</h1>
+	<p style="font-size:18px;font-weight:bold;">Sorry this page does not exist or other error occured. =(</p>
+	<p style="font-size:12px;">Error Code: 404</p>
+	<br/>
+	<p>You can search bellow.</p>
+	<div class="pesquisar">
+				<form method="get" action="/search" data-search-form>
+					<div class="lupa">
+						<input name="enviar" onClick="javascript: var value = document.getElementById('q').value;window.location.href = '/search/?q='+value;" value="enviar"  type="submit">
+					</div>
+					<input name="q"  autocomplete="off" class="pes" id="q" placeholder="Search on site" required="required" type="text" data-search-input>
+				</form>
+		</div>
+	
+</div>

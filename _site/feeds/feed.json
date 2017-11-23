@@ -24,6 +24,18 @@
 
     
     {
+        "title": 404,
+        "content": "\n\t\n\t\n\tOops!\n\tSorry this page does not exist or other error occured. =(\n\tError Code: 404\n\t\n\tYou can search bellow.\n\t\n\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\n\t\t\n\t\n",
+        "link": "/404",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
         "title": "About",
         "content": "Hi, welcome to jeancodogno.github.io, it’s my personal blog. I’m Jean Carlo Codogno and I’m Engineering Computer Student. My interests are in Engineering Computer, Math, Machine Learning and others stuffs.\n",
         "link": "/about/",

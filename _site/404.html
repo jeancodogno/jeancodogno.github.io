@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Search</title>
+	<title>404</title>
 	
 	<meta name="description" content="Engineering Computer, Math, Machine Learning and others stuffs
 ">
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/highlighting.css">
 	<link rel="stylesheet" href="/css/layout.css">
-	<link rel="canonical" href="http://localhost:4000/search/">
+	<link rel="canonical" href="http://localhost:4000/404">
 	<link rel="alternate" type="application/rss+xml" title="Jean Carlo Codogno" href="http://localhost:4000/feed.xml">
 	<meta name="google-site-verification" content="lpo_Y-UuW1BJaUyh7FtbWbFuQVILb2xz6F9XD0hPPzI" />
 	
@@ -580,50 +580,19 @@
 </header>
 
 
-    <div class="page-content">
+    <div class="page-content" itemprop="articleBody">
       <div class="wrapper">
       
-      	<div class="Esq">
-        		<div class="caminho"><h5><a><p data-search-found>
-    <span data-search-found-count></span> result(s) found for &ldquo;<span style="color:white" data-search-found-term></span>&rdquo;.
-  </p></a></h5></div>
-
-
-  
-  <div data-search-results class="posts"></div>
-
-
-
-  <!-- Search result template -->
-  <script type="text/x-template" id="search-result">
-			<div class="post">
-				<h2><a href="##Url##">##Title##</a></h2>
-				<p class="info"> Posted on ##Date##</p>
-				
-				<p class="continue-reading"><a href="##Url##">Read</a><p/>
-				
-				<div class="clear"></div>
-			</div>
-  </script>
-
-  <!-- jQuery - required but can be moved to the <head> -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <!-- Search script - Must appear after template -->
-  <script src="/scripts/search.js"></script>
-
-        	</div>
-        	
-        	<div class="Dir">
-        				<div class="profile">
-			<div class="img-perfil">
-				<div class="corte_img-perfil"><a href=""><img src="/images/perfil.jpg" alt=""></a></div>
-			</div>
-			<p>Hi, welcome to jeancodogno.github.io, it's my personal blog. I'm <strong>Jean Carlo Codogno</strong> and I'm Engineering Computer Student. My interests are in Engineering Computer, Math, Machine Learning and others stuffs.
-</p>
-
-		</div>
-		<div class="pesquisar">
+      	<div class="full">
+        	<div class="errorpage">
+	
+	<img src="/images/404.png" class="img404"/>
+	<h1>Oops!</h1>
+	<p style="font-size:18px;font-weight:bold;">Sorry this page does not exist or other error occured. =(</p>
+	<p style="font-size:12px;">Error Code: 404</p>
+	<br/>
+	<p>You can search bellow.</p>
+	<div class="pesquisar">
 				<form method="get" action="/search" data-search-form>
 					<div class="lupa">
 						<input name="enviar" onClick="javascript: var value = document.getElementById('q').value;window.location.href = '/search/?q='+value;" value="enviar"  type="submit">
@@ -631,31 +600,12 @@
 					<input name="q"  autocomplete="off" class="pes" id="q" placeholder="Search on site" required="required" type="text" data-search-input>
 				</form>
 		</div>
-
-		<div class="categories">
-			<h3>CATEGORIES</h3>
-			<ul>
-			
-			</ul>
-		</div>
-		<ul class="tag-box inline">
-
-</ul>
-		<div class="tags">
-			<h3>TAG CLOUD</h3>
-			<ul class="tagcloud">
-			
-			
-
-			
-			</ul>
-		</div>
-
-        	</div>
- 	 		<div class="clear"></div>
+	
+</div>
+        </div>
+		<div class="clear"></div>
       </div>
     </div>
-	
     <footer class="site-footer">
 	<div class="wrapper">
 		<p>&copy; <strong>Jean Carlo Codogno</strong> 2017 - Engineering Computer, Math, Machine Learning and others stuffs
