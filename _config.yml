@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Engineering Computer, Math, Machine Learning and others stuffs
 
 hi: >
-    Hi, welcome to jeancodogno.github.io, it's my personal blog. I'm <strong>Jean Carlo Codogno</strong> and I'm Engineering Computer Student. My interests are in Engineering Computer, Math, Machine Learning and others stuffs.
+    Hi, I'm Jean Carlo Codogno! I'm Computer Engineer and Software Developer at AutEM. My interests are in Computer Engineer, Math, Machine Learning, Artificial Intelligence (AI) and others stuffs. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
