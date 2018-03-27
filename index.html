@@ -9,6 +9,7 @@ layout: default
 				
 				
 				<h2><a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></h2>
+				<h3>{{post.subtitle}}</h3>
 				<p class="info"> Posted on <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> in <a href="/category/{{ post.categories }}/"/><strong>{{ post.categories }}</strong></a></p>
 	
 				<p class="texto">

@@ -15,11 +15,13 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-	font-weight:400;
 	font-size:1em;/*16px*/
-	line-height:1.125em;/*18px*/
+	line-height:1.3em;/*18px*/
 	text-align:justify;
 	color:#777;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -.003em;
 
 }
 
@@ -131,14 +133,18 @@ figcaption {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 	color:#333;
+	letter-spacing: -.003em;
 }
 
 h1{
-	font-size: 30px;
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom:20px;
 }
 
 h2{
-	font-size: 26px;
+	font-size: 30px;
+	font-weight: 800;
 }
 
 h3{
@@ -211,14 +217,17 @@ article{
 }
 article p{
 	margin-bottom:10px;
-	text-align:justify;
+	font-size: 18px;
+	
 }
+
 article .post-content a{
 	color:#f08a00;
 }
 article .post-content{
-	margin-top:20px;
+	margin-top:35px;
 }
+
 
 .m1{
 	width:100%;
@@ -378,6 +387,12 @@ article .post-content{
 	padding-left:0px;
 }
 
+.page-content .Esq .posts .post h3{
+	font-weight:500;
+	color: #999;
+	margin-top:10px;
+}
+
 .page-content .Esq .posts .post .continue-reading{
 	margin-top:10px;
 }
@@ -482,6 +497,18 @@ article .post-content{
 .page-content .Dir .categories ul li{
 	margin-top:5px;
 }
+
+.post-header h2{
+	margin-top:15px;
+	font-size: 22px;
+	font-weight:500;
+	color: #999;
+
+}
+.post-header .post-title{
+	margin-bottom:5px;
+}
+
 .tags{
 	margin-top:30px;
 }
@@ -524,8 +551,8 @@ article .post-content{
 
 
 .site-footer{font-size:0.87em;border-top:1px solid #e8e8e8;margin-top:40px;padding:30px 0;min-height: 50px;text-align:center;}
-.share-buttons{width:100%;height:20px;display:block;}
-.share-buttons li{float:left; height:20px; margin-right:10px;}
+.share-buttons{width:100%;height:15px;display:block;margin-bottom:20px}
+.share-buttons li{float:left; height:15px; margin-right:10px;}
 svg{
     width: 16px;
     height: 16px;

@@ -9,7 +9,6 @@
 
 title: Jean Carlo Codogno
 email: jeancarlo.eng.comp@outlook.com
-permalink: /404.html
 
 description: > # this means to ignore newlines until "baseurl:"
   Engineering Computer, Math, Machine Learning and others stuffs
@@ -27,10 +26,10 @@ kaggle_username: jcodogno
 medium_username: jeancarlo.eng.comp
 quora_username:
 linkedin_username: jeancarlocodogno
-gems:
+plugins:
   - jekyll-sitemap
-
-gems: [jekyll-paginate]
+  - jekyll-paginate
+  
 paginate: 5
 paginate_path: "/page:num/"
 
