@@ -16,12 +16,15 @@
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/highlighting.css">
 	<link rel="stylesheet" href="/css/layout.css">
-	<link rel="canonical" href="http://localhost:4000/search/">
-	<link rel="alternate" type="application/rss+xml" title="Jean Carlo Codogno" href="http://localhost:4000/feed.xml">
+	<link rel="stylesheet" href="/css/font-awesome.css">
+	<link rel="canonical" href="https://jeancodogno.github.io/search/">
+	<link rel="alternate" type="application/rss+xml" title="Jean Carlo Codogno" href="https://jeancodogno.github.io/feed.xml">
 	<meta name="google-site-verification" content="lpo_Y-UuW1BJaUyh7FtbWbFuQVILb2xz6F9XD0hPPzI" />
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/scripts/search.js"></script>
+	<script id="dsq-count-scr" src="//jeancodogno.disqus.com/count.js" async></script>
+	
 </head>
 
 
@@ -591,16 +594,20 @@
 
   
   <div data-search-results class="posts"></div>
-
+<p class="rss-subscribe">subscribe <a href="/feed.xml"> via RSS</a></p>
 
 
   <!-- Search result template -->
   <script type="text/x-template" id="search-result">
 			<div class="post">
 				<h2><a href="##Url##">##Title##</a></h2>
+				<h3>##Subtitle##</h3>
 				<p class="info"> Posted on ##Date##</p>
+				<p class="texto">
+						##Description##
+				</p>
 				
-				<p class="continue-reading"><a href="##Url##">Read</a><p/>
+				<p class="continue-reading"><a href="##Url##">Continue Reading</a> <i class="fa fa-comment" style="margin-left:10px;margin-right:5px;"></i><span class="disqus-comment-count" style="font-size:12px" data-disqus-url="##Url##"> <!-- Count will be inserted here --> </span><p/>
 				
 				<div class="clear"></div>
 			</div>
@@ -637,7 +644,7 @@
 			<ul>
 			
 				<li>
-					<a href="/category/jekyll update/" style="text-decoration: none;">Jekyll update</a><br />
+					<a href="/category/Machine Learning/" style="text-decoration: none;">Machine learning</a><br />
 				</li>
 			
 			</ul>
@@ -651,6 +658,18 @@
 			
 			
 
+			
+
+				
+
+				
+
+				
+
+
+					<li style="line-height:36px;">
+						<a href="/tag/machine learning/" style="text-decoration: none;font-size:26px;">Machine learning</a>
+					</li>
 			
 			</ul>
 		</div>

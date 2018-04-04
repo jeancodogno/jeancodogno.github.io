@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:"
 hi: >
     Hi, I'm Jean Carlo Codogno! I'm Computer Engineer and Software Developer at AutEM. My interests are in Computer Engineer, Math, Machine Learning, Artificial Intelligence (AI) and others stuffs. 
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 
 url: "https://jeancodogno.github.io" # the base hostname & protocol for your site
 
@@ -26,7 +26,11 @@ kaggle_username: jcodogno
 medium_username: jeancarlo.eng.comp
 quora_username:
 linkedin_username: jeancarlocodogno
-plugins:
+#plugins:
+#  - jekyll-sitemap
+#  - jekyll-paginate
+
+gems:
   - jekyll-sitemap
   - jekyll-paginate
   

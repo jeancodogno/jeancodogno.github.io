@@ -113,7 +113,7 @@ function processData() {
 
         $.each(data, function(index, item) {
             // check if search term is in content or title 
-            if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1)) {
+            if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1  || item.subtitle.toLowerCase().indexOf(q.toLowerCase()) > -1)) {
                 var result = populateResultContent($resultTemplate.html(), item);
                 resultsCount++;
                 results += result;
@@ -149,9 +149,18 @@ function showSearchResults(results) {
  */
 function populateResultContent(html, item) {
     html = injectContent(html, item.title, '##Title##');
+	if(item.subtitle != null){
+		html = injectContent(html, item.subtitle, '##Subtitle##');
+	}else{
+		html = injectContent(html, '', '##Subtitle##');
+	}
+	html = injectContent(html, item.description, '##Description##');
     html = injectContent(html, item.link, '##Url##');
     html = injectContent(html, item.excerpt, '##Excerpt##');
-    html = injectContent(html, item.date, '##Date##');
+	var data = new Date(item.date);
+	var months = ["Jan", "Feb", "Mar", "Apr", "Mar", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	var date = months[data.getMonth()+1]+" "+data.getDate()+", "+data.getFullYear();
+    html = injectContent(html, date, '##Date##');
     return html;
 }
 

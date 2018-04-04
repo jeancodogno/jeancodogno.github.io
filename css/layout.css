@@ -40,7 +40,7 @@ a:hover{
     
 
     /*background:#fafafa;*/
-	background:#f5f5f5;
+	background:#f5f5f5 url('img/background2.png') repeat;
 	border-bottom: 1px #eee solid;
     top:0px;
     width:100%;

@@ -10,16 +10,20 @@ search_omit: true
 
   
   <div data-search-results class="posts"></div>
-
+<p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}"> via RSS</a></p>
 
 
   <!-- Search result template -->
   <script type="text/x-template" id="search-result">
 			<div class="post">
 				<h2><a href="##Url##">##Title##</a></h2>
+				<h3>##Subtitle##</h3>
 				<p class="info"> Posted on ##Date##</p>
+				<p class="texto">
+						##Description##
+				</p>
 				
-				<p class="continue-reading"><a href="##Url##">Read</a><p/>
+				<p class="continue-reading"><a href="##Url##">Continue Reading</a> <i class="fa fa-comment" style="margin-left:10px;margin-right:5px;"></i><span class="disqus-comment-count" style="font-size:12px" data-disqus-url="##Url##"> <!-- Count will be inserted here --> </span><p/>
 				
 				<div class="clear"></div>
 			</div>

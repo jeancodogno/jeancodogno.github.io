@@ -16,12 +16,13 @@ layout: default
 				
 				
 				<h2><a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a></h2>
+				<h3>{{post.subtitle}}</h3>
 				<p class="info"> Posted on {{ post.date | date: "%b %-d, %Y" }} in <a href="/category/{{ post.categories }}/"/><strong>{{ post.categories }}</strong></a></p>
 				<p class="texto">
 						{{ post.description }}
 				</p>
 				
-				<p class="continue-reading"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a><p/>
+				<p class="continue-reading"><a href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a> <i class="fa fa-comment" style="margin-left:10px;margin-right:5px;"></i><span class="disqus-comment-count" style="font-size:12px" data-disqus-url="http://127.0.0.1:4000{{ post.url | prepend: site.baseurl }}"> <!-- Count will be inserted here --> </span><p/>
 				
 				<div class="clear"></div>
 			</div>
