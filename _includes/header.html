@@ -1,66 +1,105 @@
 
-<header class="site-header">
 
-    
-	<div class="m1">
-		<div class="wrapper">
-			<ul class="m1-1">
-				<li>
-					
+<header class="nav-down azul text-white" >
+	<div class="container">
+	<nav class="navbar navbar-expand-lg absolute-top">
+		
+		<button class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon toggler-icon-white"></span>
+		</button>
+
+		<div class="collapse navbar-collapse collapse" id="navbar" >
+
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{{ site.baseurl }}/">Home</a>
 				</li>
-				<li> <a href="{{ site.baseurl }}/" class="primeiro">HOME</a> </li>
-				<li> <a href="{{ site.baseurl }}/about">ABOUT</a></li>
-				
+
+				<li class="nav-item">
+					<a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+					<div class="dropdown-menu">
+						{% for category in site.categories %}
+							<a class="dropdown-item" href="/category/{{ category[0] | downcase }}/" >{{ category[0] | camelcase }}</a>
+						{% endfor %}
+					</div>
+				</li>
 			</ul>
-			<ul class="icons-sociais">
-				  {% if site.github_username %}
-				  <li class="icons">
-					<a  href="https://github.com/{{site.github_username}}">{% include icon-github2.html %}</a>
-				  </li>
-				  {% endif %}
-
-				  {% if site.twitter_username %}
-				  <li class="icons">
-					<a href="https://twitter.com/{{ site.twitter_username }}">{% include icon-twitter2.html  %}</a>
-					
-				  </li>
-				  {% endif %}
-				  
-				  {% if site.kaggle_username %}
-				  <li class="icons">
-					<a class="icons" href="https://www.kaggle.com/{{site.kaggle_username}}">{% include icon-kaggle2.html %}</a>
-				  </li>
-				  {% endif %}
-				  
-				  {% if site.linkedin_username %}
-				  <li class="icons">
-					<a class="icons" href="https://www.linkedin.com/in/{{site.linkedin_username}}">{% include icon-linkedin.html %}</a>
-				  </li>
-				  {% endif %}
-				  
-				  {% if site.medium_username %}
-				  <li class="icons">
-					<a class="icons" href="https://www.medium.com/@{{site.medium_username}}">{% include icon-medium.html %}</a>
-				  </li>
-				  {% endif %}
-
-				  {% if site.quora_username %}
-				  <li class="icons">
-					<a class="icons" href="https://www.quora.com/profile/{{site.quora_username}}">{% include icon-quora.html %}</a>
-				  </li>
-				  {% endif %} 
-				  <li class="icons">
-					<a class="icons" href="{{ '/feed.xml' | prepend: site.baseurl }}"> {% include icon-rss.html %}</a>
-				  </li>
-				  {% if site.email %}
-				  <li class="icons">
-					<a class="icons" href="mailto:{{site.email}}">{% include icon-email.html %}</a>
-				  </li>
-				  
-				  {% endif %}
-				  
-				</ul>
 		</div>
-  </div>
-	<a href="{{ site.baseurl }}/"><h1 class="site-title">{{ site.title }}</h1></a>
+
+		<div class="collapse navbar-collapse collapse" >
+
+			<ul class="navbar-nav ml-auto">
+
+				{% if site.github_username %}
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/{{site.github_username}}"><i class="fab fa-github"></i></a>
+					</li>
+				{% endif %}
+
+				{% if site.twitter_username %}
+					<li class="nav-item">
+						<a class="nav-link" href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
+					</li>
+				{% endif %}
+
+				{% if site.kaggle_username %}
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.kaggle.com/{{site.kaggle_username}}"><i class="icon-icon-kaggle"></i></a>
+					</li>
+				{% endif %}
+
+				{% if site.linkedin_username %}
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.linkedin.com/in/{{site.linkedin_username}}"><i class="fab fa-linkedin"></i></a>
+					</li>
+				{% endif %}
+
+				{% if site.medium_username %}
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.medium.com/@{{site.medium_username}}"><i class="fab fa-medium"></i></a>
+					</li>
+				{% endif %}
+
+				{% if site.quora_username %}
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.quora.com/profile/{{site.quora_username}}"><i class="fab fa-quora"></i></a>
+					</li>
+				{% endif %} 
+					<li class="nav-item">
+						<a class="nav-link" href="{{ '/feed.xml' | prepend: site.baseurl }}"> <i class="fas fa-rss-square"></i></a>
+					</li>
+				{% if site.email %}
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:{{site.email}}"><i class="fas fa-envelope-open"></i></a>
+					</li>
+				{% endif %}
+			  
+			</ul>
+			
+			<div class="header_search row" >
+				<form method="get" id="searchform" action="/search" >
+					<input class="search_text" placeholder="Hit enter to search" type="text" name="q" onfocusout="close_search();"  type="text"/>
+					<a  href="#" onclick="expand_search();" class="search_submit">
+    					<i class="fa fa-search"></i>
+					</a>
+				</form>
+			</div>
+
+		</div>
+
+	</nav>
+</div>
 </header>
+
+<div class="container">
+	<div class="logo col-md-3">
+		<a href="/">
+			<h1>
+				<img src="/img/logo3.png" alt="jeancarlocodogno" />
+			</h1>
+		</a>
+	</div>
+</div>

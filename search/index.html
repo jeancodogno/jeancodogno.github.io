@@ -3,30 +3,41 @@ layout: default
 title: Search
 search_omit: true
 ---
-<div class="caminho"><h5><a><p data-search-found>
-    <span data-search-found-count></span> result(s) found for &ldquo;<span style="color:white" data-search-found-term></span>&rdquo;.
-  </p></a></h5></div>
+<div class="col-md-9">
+	<header class="clearfix search_header"> 
+		<p data-search-found class="search">
+    		> <span data-search-found-count></span> result(s) found for &ldquo;
+    		<span data-search-found-term></span>&rdquo;
+  		</p>
+  	</header>
 
+<div data-search-results >
+	
+</div>
 
-  
-  <div data-search-results class="posts"></div>
-<p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}"> via RSS</a></p>
-
-
+</div>
   <!-- Search result template -->
   <script type="text/x-template" id="search-result">
-			<div class="post">
-				<h2><a href="##Url##">##Title##</a></h2>
-				<h3>##Subtitle##</h3>
-				<p class="info"> Posted on ##Date##</p>
-				<p class="texto">
-						##Description##
-				</p>
+  		<article class="card mb-4" itemscope itemtype="http://schema.org/BlogPosting">
+			<header class="card-header">
 				
-				<p class="continue-reading"><a href="##Url##">Continue Reading</a> <i class="fa fa-comment" style="margin-left:10px;margin-right:5px;"></i><span class="disqus-comment-count" style="font-size:12px" data-disqus-url="##Url##"> <!-- Count will be inserted here --> </span><p/>
-				
-				<div class="clear"></div>
-			</div>
+				<div class="card-meta">
+					Posted on <time datetime="##Date##" itemprop="datePublished">##Date##</time>
+				</div>
+				<a href="##Url##"> <h3 class="card-title">##Title## </h3></a>
+				<a href="##Url##"><h4 class="card-subtitle">##Subtitle##</h4></a>
+			</header>
+			<a href="##Url##"> <img class="card-img" src="/images/8.jpg" alt="##Title##"/></a>
+			
+			<div class="card-body">
+              <p class="card-text">##Description##</p>
+              <p><a class="btn btn-orange" href="##Url##">Continue Reading </a> <i class="fa fa-comment"></i><span class="disqus-comment-count" data-disqus-url="##Url##"> </span><p/>
+            </div>
+
+		
+		
+		</article>
+
   </script>
 
   <!-- jQuery - required but can be moved to the <head> -->

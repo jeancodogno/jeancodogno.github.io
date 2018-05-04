@@ -5,23 +5,22 @@
 
   <body>
 
-    {% include header.html %}
+    
+      {% include header.html %}
+      <main class="main pt-4" role="main">
 
-    <div class="page-content">
-      <div class="wrapper">
+        <div class="container">
+
+          <div class="row">
       
-      	<div class="Esq">
-        		{{ content }}
-        	</div>
-        	
-        	<div class="Dir">
-        		{% include dir.html %}
-        	</div>
- 	 		<div class="clear"></div>
-      </div>
+            {{ content }}
+            {% include dir.html %}
+          </div>
+        </div>
+      </main>
+
+      {% include footer.html %}
     </div>
-	
-    {% include footer.html %}
 
   </body>
 

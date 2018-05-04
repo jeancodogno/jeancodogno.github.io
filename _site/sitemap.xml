@@ -7,7 +7,61 @@
 
   
     <url>
-      <loc>https://jeancodogno.github.io/machine%20learning/2018/03/28/whats-machine-learning.html</loc>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning.html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(outra-c%C3%B3pia).html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(c%C3%B3pia).html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(6%C2%AA-c%C3%B3pia).html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(5%C2%AA-c%C3%B3pia).html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(4%C2%AA-c%C3%B3pia).html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(3%C2%AA-c%C3%B3pia).html</loc>
       
         <lastmod>2018-03-28T13:06:00-03:00</lastmod>
       
@@ -19,7 +73,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/404.html</loc>
+        <loc>http://localhost:4000/404.html</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -29,7 +83,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/about/</loc>
+        <loc>http://localhost:4000/about/</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -39,7 +93,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/feeds/feed.json</loc>
+        <loc>http://localhost:4000/tag/deep%20learning.html</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -49,7 +103,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/feed.xml</loc>
+        <loc>http://localhost:4000/feeds/feed.json</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -59,7 +113,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/feeds/feed2.json</loc>
+        <loc>http://localhost:4000/feed.xml</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -69,7 +123,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/search/</loc>
+        <loc>http://localhost:4000/feeds/feed2.json</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -79,7 +133,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/</loc>
+        <loc>http://localhost:4000/search/</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -89,7 +143,7 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/sitemap.xml</loc>
+        <loc>http://localhost:4000/</loc>
         
 
         <changefreq>weekly</changefreq>
@@ -99,7 +153,37 @@
   
 
     <url>
-        <loc>https://jeancodogno.github.io/robots.txt</loc>
+        <loc>http://localhost:4000/category/machine%20learning.html</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>http://localhost:4000/tag/machine%20learning.html</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>http://localhost:4000/sitemap.xml</loc>
+        
+
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+  
+
+    <url>
+        <loc>http://localhost:4000/page2/</loc>
         
 
         <changefreq>weekly</changefreq>
