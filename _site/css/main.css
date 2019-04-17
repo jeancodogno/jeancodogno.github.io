@@ -21,13 +21,6 @@ h6{
 
 }
 
-.logo{
-
-	margin-top: 50px;
- 	margin-bottom: 10px;
-
-}
-
 .nav-item ul li{
 
  	list-style-type: none;
@@ -44,7 +37,6 @@ h6{
 .card{
 	background-color: transparent;
 	border:0px;
-	border-bottom: 1px solid rgba(0,0,0,.1);
 
 }
 
@@ -260,4 +252,18 @@ footer{
 .dropdown-menu a:focus, .dropdown-menu a:hover, .dropdown-menu a:after{
 	background-color: #fff;
 	color:#333;
+}
+
+
+p{
+
+    text-align: justify;
+}
+.card-subtitle{
+    color: #848484 !important;
+    font-size: 1.3rem !important;
+}
+
+.divider{
+	border-bottom: 1px solid rgba(0,0,0,.1)
 }

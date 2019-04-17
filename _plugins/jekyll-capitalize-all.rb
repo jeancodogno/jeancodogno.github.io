@@ -1,3 +1,4 @@
+
 require 'liquid'
 require 'uri'
 
@@ -8,7 +9,7 @@ module CapitalizeAll
   	assign resp = '';
   	for i in (0..word.size)
   		assign resp = word[i].capitalize().concat(resp)
-  	endfor
+  		end
     return resp
   end
 end

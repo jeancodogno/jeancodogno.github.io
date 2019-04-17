@@ -1,17 +1,24 @@
 		
-		<div class="col-md-3 ml-auto" >
+		<div class="col-12 col-sm-12 col-md-12 col-lg-4 ml-auto" >
 
           <aside class="sidebar">
-            <div class="card mb-4">
+            <div class="card mb">
               <div class="card-body">
-                <h4 class="card-title">About</h4>
+                <div class="logo col-md-3 p-0">
+                  <a href="/">
+                    <h1>
+                      <img src="/img/logo3.png" alt="jeancarlocodogno" />
+                    </h1>
+                  </a>
+                </div>
                 <p class="card-text">{{ site.hi }} </p>
+                <div class="divider mt-5"></div>
               </div>
             </div><!-- /.card -->
           </aside>
 
           <aside class="sidebar sidebar-sticky">
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Tags</h4>
                
@@ -39,10 +46,10 @@
 					<a href="/tag/{{ tag[0] | downcase }}/" class="btn btn-secondary btn-sm mb-1" style="font-size:{{ font }}px;">{{ tag[0] | capitalize }}</a>
 						
 				{% endfor %}
-				
+				      <div class="divider mt-5"></div>
               </div>
             </div><!-- /.card -->
-            <div class="card mb-4">
+            <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Recent posts</h4>
            
@@ -51,17 +58,15 @@
 
                   <a href="{{ post.url | prepend: site.url }}" class="d-inline-block">
                     <h6>{{ post.title }} </h6>
-                    <img class="card-img" src="{{post.image}}" alt="">
                   </a>
-                  <header>
-                    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> in <a href="/category/{{ post.categories[0] | downcase }}/"/><strong>{{ post.categories[0] | camelcase }}</strong></a>
+                  <header style="color: #848484 !important;font-size:0.8rem">
+                    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
                   </header>
                 </article>
                 {% if forloop.index == 3%}
                   {% break %}
                 {% endif %}
                 {% endfor %}
-
               </div>
             </div><!-- /.card -->
           </aside>
