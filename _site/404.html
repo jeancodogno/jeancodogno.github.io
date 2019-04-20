@@ -32,10 +32,11 @@
   <body>
 
     
+      
 
-<header class="nav-down azul text-white" >
+<header class="nav-down" >
 	<div class="container">
-	<nav class="navbar navbar-expand-lg absolute-top">
+	<nav class="navbar navbar-expand-lg absolute-top p-1">
 		
 		<button class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon toggler-icon-white"></span>
@@ -124,12 +125,20 @@
 </header>
 
 
+      <main class="main pt-4" role="main">
 
-    <div class="page-content" itemprop="articleBody">
-      <div class="wrapper">
-      
-      	<div class="full">
-        	<div class="errorpage">
+        <div class="container mt-4">
+          
+          <div class="logo col-md-3 p-0">
+            <a href="/">
+              <h1>
+                <img src="/img/logo3.png" alt="jeancarlocodogno" />
+              </h1>
+            </a>
+          </div>
+
+          <div class="row mt-5">
+            <div class="errorpage">
 	
 	<img src="/images/404.png" class="img404"/>
 	<h1>Oops!</h1>
@@ -147,11 +156,12 @@
 		</div>
 	
 </div>
+            
+          </div>
         </div>
-		<div class="clear"></div>
-      </div>
-    </div>
-    <footer class="site-footer">
+      </main>
+
+      <footer class="site-footer">
 	<div class="container">
 		<div class="second_footer has_first_footer row"><div class="col-md-12"><div class="second_footer_content_wrapper footer_credits"> &copy; <strong>Jean Carlo Codogno</strong> 2017 - Engineering Computer, Math, Machine Learning and others stuffs
 </div></div></div>
@@ -168,7 +178,6 @@
 		var isHidden = false;
 
 		function expand_search(){
-			console.log("expand_search");
 			if(isHidden==false){
 
 				isHidden = true;
@@ -184,7 +193,6 @@
 		}
 
 		function close_search(){
-			console.log("close_search");
 			if($('.search_text').val() == ""){
 				$('.search_text').css("width", "0px");
 				$('.search_text').css("display", "none");
@@ -205,6 +213,7 @@
 
 
 	</script>
+    </div>
 
   </body>
 

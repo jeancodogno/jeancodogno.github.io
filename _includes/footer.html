@@ -14,7 +14,6 @@
 		var isHidden = false;
 
 		function expand_search(){
-			console.log("expand_search");
 			if(isHidden==false){
 
 				isHidden = true;
@@ -30,7 +29,6 @@
 		}
 
 		function close_search(){
-			console.log("close_search");
 			if($('.search_text').val() == ""){
 				$('.search_text').css("width", "0px");
 				$('.search_text').css("display", "none");

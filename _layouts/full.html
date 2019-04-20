@@ -5,18 +5,29 @@
 
   <body>
 
-    {% include header.html %}
+    
+      {% include header.html %}
+      <main class="main pt-4" role="main">
 
-    <div class="page-content" itemprop="articleBody">
-      <div class="wrapper">
-      
-      	<div class="full">
-        	{{ content }}
+        <div class="container mt-4">
+          
+          <div class="logo col-md-3 p-0">
+            <a href="/">
+              <h1>
+                <img src="/img/logo3.png" alt="jeancarlocodogno" />
+              </h1>
+            </a>
+          </div>
+
+          <div class="row mt-5">
+            {{ content }}
+            
+          </div>
         </div>
-		<div class="clear"></div>
-      </div>
+      </main>
+
+      {% include footer.html %}
     </div>
-    {% include footer.html %}
 
   </body>
 

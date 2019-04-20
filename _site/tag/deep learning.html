@@ -34,9 +34,9 @@
     
       
 
-<header class="nav-down azul text-white" >
+<header class="nav-down" >
 	<div class="container">
-	<nav class="navbar navbar-expand-lg absolute-top">
+	<nav class="navbar navbar-expand-lg absolute-top p-1">
 		
 		<button class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon toggler-icon-white"></span>
@@ -128,76 +128,44 @@
       <main class="main pt-4" role="main">
 
         <div class="container mt-4">
+          
+          <div class="logo col-md-3 p-0">
+            <a href="/">
+              <h1>
+                <img src="/img/logo3.png" alt="jeancarlocodogno" />
+              </h1>
+            </a>
+          </div>
 
-          <div class="row">
+          <div class="row mt-5">
             		
-		<div class="col-12 col-sm-12 col-md-12 col-lg-4 ml-auto" >
+		<div class="col-12 col-sm-12 col-md-12 col-lg-3 ml-auto" >
 
           <aside class="sidebar">
-            <div class="card mb">
-              <div class="card-body">
-                <div class="logo col-md-3 p-0">
-                  <a href="/">
-                    <h1>
-                      <img src="/img/logo3.png" alt="jeancarlocodogno" />
-                    </h1>
-                  </a>
-                </div>
+            <div class="card">
+              <div class="card-body p-2">
+                <h4 class="card-title mb-3">About Me</h4>
                 <p class="card-text">Hi, I'm Jean Carlo Codogno! I'm Computer Engineer and Software Developer at AutEM. My interests are in Computer Engineer, Math, Machine Learning, Artificial Intelligence (AI) and others stuffs. 
  </p>
-                <div class="divider mt-5"></div>
+                <div class="divider mt-3"></div>
               </div>
             </div><!-- /.card -->
-          </aside>
-
-          <aside class="sidebar sidebar-sticky">
+     
             <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Tags</h4>
-               
-				
-				
-
-				
-
-					
-
-					
-
-					
-
-
-						
-					<a href="/tag/deep learning/" class="btn btn-secondary btn-sm mb-1" style="font-size:14px;">Deep learning</a>
-						
-				
-
-					
-
-					
-
-					
-
-
-						
-					<a href="/tag/machine learning/" class="btn btn-secondary btn-sm mb-1" style="font-size:26px;">Machine learning</a>
-						
-				
-
-					
-
-					
-
-					
-
-
-						
-					<a href="/tag/npl/" class="btn btn-secondary btn-sm mb-1" style="font-size:14px;">Npl</a>
-						
-				
-				      <div class="divider mt-5"></div>
+              <div class="card-body p-2 pt-0">
+                <h4 class="card-title mb-3">Tags</h4>
+        				
+        					<a href="/tag/deep learning/" class="btn btn-light btn-sm mb-1" >Deep learning</a>
+        				
+        					<a href="/tag/machine learning/" class="btn btn-light btn-sm mb-1" >Machine learning</a>
+        				
+        					<a href="/tag/npl/" class="btn btn-light btn-sm mb-1" >Npl</a>
+        				
+                <!--
+				      <div class="divider mt-5"></div> -->
               </div>
-            </div><!-- /.card -->
+            </div>
+            <!--
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Recent posts</h4>
@@ -237,13 +205,14 @@
                 
                   
               </div>
-            </div><!-- /.card -->
+            </div> /.card -->
+
           </aside>
 
         </div>
 		
 
-            <div class="col-md-9">
+            <div class="col-lg-9">
 <header class="clearfix search_header"> 
 	<p data-search-found class="search">
 	>
@@ -331,7 +300,6 @@
 		var isHidden = false;
 
 		function expand_search(){
-			console.log("expand_search");
 			if(isHidden==false){
 
 				isHidden = true;
@@ -347,7 +315,6 @@
 		}
 
 		function close_search(){
-			console.log("close_search");
 			if($('.search_text').val() == ""){
 				$('.search_text').css("width", "0px");
 				$('.search_text').css("display", "none");

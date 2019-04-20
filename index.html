@@ -3,11 +3,18 @@ layout: default
 ---
   
 		
-			<div class="col-lg-8">
+			<div class="col-lg-9">
 			{% for post in paginator.posts %}
-				<article class="card mb-4" itemscope itemtype="http://schema.org/BlogPosting">
-					<header class="card-header pb-0">
-						
+				<article class="card mb-4 pt-3" itemscope itemtype="http://schema.org/BlogPosting">
+
+					{% if post.image %}
+					<div class="card-body py-0">
+						<a href="{{ post.url | prepend: site.url }}"> <img class="card-img my-2" src="{{post.image}}" alt="{{ post.title }}"/></a>
+					</div>
+					{% endif %}
+					
+
+					<header class="card-header pt-0 pb-0">
 						<div class="card-meta mb-0">
 							Posted on <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> in <a href="/category/{{ post.categories[0] | downcase }}/"/><strong>{{ post.categories[0] | camelcase}}</strong></a>
 						</div>
@@ -16,9 +23,6 @@ layout: default
 					</header>
 					
 					<div class="card-body py-1">
-						{% if post.image %}
-						<a href="{{ post.url | prepend: site.url }}"> <img class="card-img my-2" src="{{post.image}}" alt="{{ post.title }}"/></a>
-						{% endif %}
 		              	<p class="card-text">{{ post.description }}</p>
 		              	<p><a class="btn btn-orange" href="{{ post.url | prepend: site.url }}">Continue Reading </a> <i class="fa fa-comment"></i><span class="disqus-comment-count" data-disqus-url="{{ post.url | prepend: site.url }}"> </span><p/>
 		              	<div class="divider mt-5"></div>

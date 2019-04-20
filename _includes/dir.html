@@ -1,54 +1,26 @@
 		
-		<div class="col-12 col-sm-12 col-md-12 col-lg-4 ml-auto" >
+		<div class="col-12 col-sm-12 col-md-12 col-lg-3 ml-auto" >
 
           <aside class="sidebar">
-            <div class="card mb">
-              <div class="card-body">
-                <div class="logo col-md-3 p-0">
-                  <a href="/">
-                    <h1>
-                      <img src="/img/logo3.png" alt="jeancarlocodogno" />
-                    </h1>
-                  </a>
-                </div>
-                <p class="card-text">{{ site.hi }} </p>
-                <div class="divider mt-5"></div>
-              </div>
-            </div><!-- /.card -->
-          </aside>
-
-          <aside class="sidebar sidebar-sticky">
             <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Tags</h4>
-               
-				{% assign max = 1 %}
-				{% for tag in site.tags %}
-
-					{% if max < tag[1].size %}
-						{% assign max = tag[1].size %}
-					{% endif %}
-
-				{% endfor %}
-
-				{% for tag in site.tags %}
-
-					{% assign font = tag[1].size | divided_by: max %}
-
-					{% assign font = font | times: 26 %}
-
-					{% if font == 0 %}
-						{% assign font = 14 %}
-					{% endif %}
-
-
-						
-					<a href="/tag/{{ tag[0] | downcase }}/" class="btn btn-secondary btn-sm mb-1" style="font-size:{{ font }}px;">{{ tag[0] | capitalize }}</a>
-						
-				{% endfor %}
-				      <div class="divider mt-5"></div>
+              <div class="card-body p-2">
+                <h4 class="card-title mb-3">About Me</h4>
+                <p class="card-text">{{ site.hi }} </p>
+                <div class="divider mt-3"></div>
               </div>
             </div><!-- /.card -->
+     
+            <div class="card">
+              <div class="card-body p-2 pt-0">
+                <h4 class="card-title mb-3">Tags</h4>
+        				{% for tag in site.tags %}
+        					<a href="/tag/{{ tag[0] | downcase }}/" class="btn btn-light btn-sm mb-1" >{{ tag[0] | capitalize }}</a>
+        				{% endfor %}
+                <!--
+				      <div class="divider mt-5"></div> -->
+              </div>
+            </div>
+            <!--
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">Recent posts</h4>
@@ -68,7 +40,8 @@
                 {% endif %}
                 {% endfor %}
               </div>
-            </div><!-- /.card -->
+            </div> /.card -->
+
           </aside>
 
         </div>
