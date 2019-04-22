@@ -585,6 +585,13 @@ pre code {
   }
 }
 
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;

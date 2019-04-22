@@ -4,11 +4,11 @@
     
     
 	{
-	"title": "What's Machine Learning?",
+	"title": "My Fist Blog Post",
 	"subtitle": "Discover what’s machine learning and when it’s important\n",
 	"description": "<p>One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable.</p><p>In the first part of this book, we will explore the history and importance of design patterns which can really be applied to any programming language. If you're already sold on or are familiar with this history, feel free to skip to the chapter \"What is a Pattern?\" to continue reading.</p>",
 	"content": "One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable.\n\nIn the first part of this book, we will explore the history and importance of design patterns which can really be applied to any programming language. If you’re already sold on or are familiar with this history, feel free to skip to the chapter “What is a Pattern?” to continue reading.\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning.html",
+	"link": "/machine%20learning/2018/03/28/my-first-post.html",
 	"date": "2018-03-28 13:06:00 -0300",
 	"tags": "machine learningNPL",
 	"categories": "Machine Learning",
@@ -23,96 +23,11 @@
 	{
 	"title": "What's Machine Learning?",
 	"subtitle": "Discover what’s machine learning and when it’s important\n",
-	"description": "In this post I'll explain what's machine learning and how you can learn it.",
-	"content": "In this post I’ll explain what’s machine learning and how you can learn it\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning-(outra-c%C3%B3pia).html",
-	"date": "2018-03-28 13:06:00 -0300",
-	"tags": "machine learning",
-	"categories": "Machine Learning",
-	"excerpt": "",
-	"search_omit": ""
-    }
-    
-    
-
-    
-    ,
-	{
-	"title": "What's Machine Learning?",
-	"subtitle": "Discover what’s machine learning and when it’s important\n",
-	"description": "In this post I'll explain what's machine learning and how you can learn it.",
-	"content": "In this post I’ll explain what’s machine learning and how you can learn it\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning-(c%C3%B3pia).html",
-	"date": "2018-03-28 13:06:00 -0300",
-	"tags": "machine learning",
-	"categories": "Machine Learning",
-	"excerpt": "",
-	"search_omit": ""
-    }
-    
-    
-
-    
-    ,
-	{
-	"title": "What's Machine Learning?",
-	"subtitle": "Discover what’s machine learning and when it’s important\n",
-	"description": "In this post I'll explain what's machine learning and how you can learn it.",
-	"content": "In this post I’ll explain what’s machine learning and how you can learn it\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning-(6%C2%AA-c%C3%B3pia).html",
-	"date": "2018-03-28 13:06:00 -0300",
-	"tags": "machine learning",
-	"categories": "Machine Learning",
-	"excerpt": "",
-	"search_omit": ""
-    }
-    
-    
-
-    
-    ,
-	{
-	"title": "What's Machine Learning?",
-	"subtitle": "Discover what’s machine learning and when it’s important\n",
-	"description": "In this post I'll explain what's machine learning and how you can learn it.",
-	"content": "In this post I’ll explain what’s machine learning and how you can learn it\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning-(5%C2%AA-c%C3%B3pia).html",
-	"date": "2018-03-28 13:06:00 -0300",
-	"tags": "machine learning",
-	"categories": "Machine Learning",
-	"excerpt": "",
-	"search_omit": ""
-    }
-    
-    
-
-    
-    ,
-	{
-	"title": "What's Machine Learning?2",
-	"subtitle": "Discover what’s machine learning and when it’s important\n",
-	"description": "In this post I'll explain what's machine learning and how you can learn it.",
-	"content": "In this post I’ll explain what’s machine learning and how you can learn it\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning-(4%C2%AA-c%C3%B3pia).html",
-	"date": "2018-03-28 13:06:00 -0300",
-	"tags": "deep learning",
-	"categories": "Machine Learning",
-	"excerpt": "",
-	"search_omit": ""
-    }
-    
-    
-
-    
-    ,
-	{
-	"title": "What's Machine Learning?",
-	"subtitle": "Discover what’s machine learning and when it’s important\n",
-	"description": "In this post I'll explain what's machine learning and how you can learn it.",
+	"description": "<p>One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable.</p><p>In the first part of this book, we will explore the history and importance of design patterns which can really be applied to any programming language. If you're already sold on or are familiar with this history, feel free to skip to the chapter \"What is a Pattern?\" to continue reading.</p>",
 	"content": "One of the most important aspects of writing maintainable code is being able to notice the recurring themes in that code and optimize them. This is an area where knowledge of design patterns can prove invaluable.\n\nIn the first part of this book, we will explore the history and importance of design patterns which can really be applied to any programming language. If you’re already sold on or are familiar with this history, feel free to skip to the chapter “What is a Pattern?” to continue reading.\n",
-	"link": "/machine%20learning/2018/03/28/whats-machine-learning-(3%C2%AA-c%C3%B3pia).html",
+	"link": "/machine%20learning/2018/03/28/whats-machine-learning.html",
 	"date": "2018-03-28 13:06:00 -0300",
-	"tags": "deep learning",
+	"tags": "machine learningNPL",
 	"categories": "Machine Learning",
 	"excerpt": "",
 	"search_omit": ""

@@ -1,0 +1,70 @@
+@import "prism.css";
+
+@font-face {
+	font-family: Ubuntu;
+    src: url('fonts/Ubuntu-R.ttf');
+}
+
+body{
+
+ 	background-color:#f2f2f2;
+ 	font-family: Ubuntu;
+}
+
+.limon-logo img{
+
+ 	margin-top: 24px;
+    margin-bottom: 20px;
+    width: 200px;
+
+}
+
+.nav-item ul li{
+
+ 	list-style-type: none;
+ 	margin-left: -20px;
+
+}
+
+#menu-lateral{
+
+ 	margin-top:60px;
+
+}
+
+main{
+ 	margin-top:60px;
+}
+
+.card{
+	background-color: transparent;
+	border:0px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+
+}
+
+.card .card-header{
+
+	background-color: transparent;
+	border:0px;
+	padding-left: 0px;
+
+}
+
+.card .card-body{
+	padding-top:0px;
+	padding-left: 0px;
+
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}

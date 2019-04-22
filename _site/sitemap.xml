@@ -7,61 +7,16 @@
 
   
     <url>
+      <loc>http://localhost:4000/machine%20learning/2018/03/28/my-first-post.html</loc>
+      
+        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
       <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning.html</loc>
-      
-        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(outra-c%C3%B3pia).html</loc>
-      
-        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(c%C3%B3pia).html</loc>
-      
-        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(6%C2%AA-c%C3%B3pia).html</loc>
-      
-        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(5%C2%AA-c%C3%B3pia).html</loc>
-      
-        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(4%C2%AA-c%C3%B3pia).html</loc>
-      
-        <lastmod>2018-03-28T13:06:00-03:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/machine%20learning/2018/03/28/whats-machine-learning-(3%C2%AA-c%C3%B3pia).html</loc>
       
         <lastmod>2018-03-28T13:06:00-03:00</lastmod>
       
@@ -174,16 +129,6 @@
 
     <url>
         <loc>http://localhost:4000/sitemap.xml</loc>
-        
-
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-  
-
-    <url>
-        <loc>http://localhost:4000/page2/</loc>
         
 
         <changefreq>weekly</changefreq>
